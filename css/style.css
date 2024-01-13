@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Salsa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(223, 177, 121);
+    overflow: hidden;
+}
+
+.container {
+    width: 45%;
+    margin: 32px auto;
+    
+}
+
+.header {
+    height: 200px;
+    text-align: center;
+}
+.header h1{
+    font-size: 3.5rem;
+    color: rgb(31, 96, 164);
+    font-family: 'Salsa', cursive;
+    animation: header;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes header{
+    0% {top: -250px;}
+    100% {top: 100px ;}
+}
+.main{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    line-height: 1.5;
+}
+.text-left{
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes textLeft{
+    0% {left: -1000px;}
+    85%{left: 50px;}
+    100%{left: 0;}
+
+}
+.text-right{
+   margin-top: 32px;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+    position: relative;
+
+}
+@keyframes textRight{
+    0% {right: -1000px;}
+    85%{right: 50px;}
+    100%{right: 0;}
+}
+
+.footer{
+    text-align: center;
+
+}
+
+.btn{
+    
+    opacity: 0;
+    display: inline-block;
+    margin:2rem ;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid white;
+    animation: anibitn;
+    animation-duration: 5s;
+     animation-delay: 4s;
+     animation-fill-mode: forwards;
+     
+}
+@keyframes anibitn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
